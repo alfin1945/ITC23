@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- Register -->
+    <div class="">
+        <div class="">
+            <!-- Kiri -->
+            <div>
+                <div>
+                    <!-- Nama -->
+                    <div>
+                        <label for="name" class="block">Nama</label>
+                        <input type="text" name="name" id="name" placeholder="Masukkan Nama"
+                            class="py-2 px-2 w-full border border-black">
+                    </div>
+                    <!-- Jenis Kelamin -->
+                    <div>
+                        <label for="name" class="block">Jenis Kelamin</label>
+                        <select name="jk" id="jk" class="border border-black w-full py-2 px-2">
+                            <option selected>--Jenis Kelamin--</option>
+                            <option value="lk">Laki-laki</option>
+                            <option value="pr">Perempuan</option>
+                        </select>
+                    </div>
+                    <!-- Nomor HP/WA -->
+                    <div>
+                        <label for="nomor" class="block">Nomor HP/WA</label>
+                        <input type="number" name="nomor" id="nomor" placeholder="Masukkan Nomor WA/HP"
+                            class="py-2 w-full border border-black px-2">
+                    </div>
+                    <!-- Alamat -->
+                    <div>
+                        <label for="name" class="block">Alamat</label>
+                        <textarea name="alamat" id="alamat" cols="30" rows="10" class="border border-black w-full px-2" ></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- Kanan -->
+            <div>
+                <div>
+                    <!-- Nim -->
+                    <div>
+                        <label for="nim" class="block">Nim</label>
+                        <input type="number" name="nim" id="nim" placeholder="Masukkan Nim"
+                            class="py-2 px-2 w-full border border-black">
+                    </div>
+                    <!-- Prodi -->
+                    <div>
+                        <label for="prodi" class="block">Prodi</label>
+                        <select name="prodi" id="prodi" class="border border-black w-full py-2 px-2">
+                            <option selected>--Pilih Prodi--</option>
+                            <option value="ti">Teknik Informatika/option>
+                            <option value="si">Sistem Informasi</option>
+                        </select>
+                    </div>
+                    <!-- Semester -->
+                    <div>
+                        <label for="semester" class="block">Semester</label>
+                        <select name="semester" id="semester" class="border border-black w-full py-2 px-2">
+                            <option selected>--Pilih Semester--</option>
+                            <option value="1">1</option>
+                            <!-- <option value="2">2</option> -->
+                            <option value="3">3</option>
+                            <!-- <option value="4">4</option> -->
+                            <option value="5">5</option>
+                            <!-- <option value="6">6</option> -->
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Masukkan Email"
+                            class="py-2 px-2 w-full border border-black">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Register -->
+</body>
+
+</html>
