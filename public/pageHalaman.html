@@ -63,20 +63,46 @@
     <!-- Halaman -->
     <div class="block">
         <div class="mt-24 mx-24 md:mx-60">
-            <img src="/img/ukm.png" class="w-80 h-24 md:w-max md:h-max" alt="" width="600%">
+            <img src="/img/ukm.png" class="w-full h-full md:w-max md:h-max" alt="" width="600%">
         </div>
-        <div class="flex gap-2 mt-10 justify-center md:gap-3">
+        <div class="flex gap-2 mt-5 justify-center md:gap-3">
             <div>
                 <a href="#"
-                    class="bg-transparent border border-[#17C2E8] py-2 px-5 md:px-7 text-sm text-white text-base font-semibold md:text-xl rounded-md hover:bg-[#17C2E8]">Login</a>
+                    class="show-modal bg-transparent border border-[#17C2E8] py-1 px-3 md:px-7 md:py-2 md:text-base text-sm text-white font-semibold md:text-xl rounded hover:bg-[#17C2E8]">Login</a>
             </div>
             <div>
                 <a href="#"
-                    class="bg-[#17C2E8] border border-[#17C2E8] py-2 px-5 md:px-7 text-sm text-white text-base font-semibold md:text-xl rounded-md hover:bg-transparent">Register</a>
+                    class="bg-[#17C2E8] border border-[#17C2E8] py-1 px-3 md:px-7 md:py-2 md:text-base text-sm text-white font-semibold md:text-xl rounded hover:bg-transparent">Register</a>
             </div>
+
         </div>
     </div>
     <!-- End Halaman -->
+
+
+    <!-- Modal -->
+
+    <div class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black opacity-50 hidden">
+        <!-- Modal -->
+        <div class="bg-white rounded shadow-lg md:w-1/3 w-2/3 ">
+            <!-- Header Modal -->
+            <div class="border-b px-4 py-2">
+                <h4>Modal Title</h4>
+            </div>
+            <!-- Body Modal -->
+            <div class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima debitis magnam. Quaerat eaque,
+                expedita nesciunt velit, impedit laboriosam et saepe dolore nulla ut consequatur inventore dolorem ex,
+                tempora facere.
+            </div>
+            <div class="flex justify-end items-center border-t p-3">
+                <button class="bg-red-600 hover:bg-red-900 px-3 py-1 rounded text-white mr-1 close-modal">batal</button>
+                <button class="bg-blue-600 hover:bg-blue-900 px-3 py-1 rounded text-white">Oke</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
 
 
 
@@ -92,6 +118,20 @@
 
             e.name === 'menu' ? (e.name = "close", list.classList.add('top-[68px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[68px]', list.classList.remove('opacity-100')))
         }
+
+
+        const modal = document.querySelector('.modal');
+        const showModal = document.querySelector('.show-modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        showModal.addEventListener('click', function () {
+            modal.classList.remove('hidden')
+        });
+
+
+        closeModal.addEventListener('click', function () {
+            modal.classList.add('hidden')
+        });
     </script>
     <!-- End Script -->
 
