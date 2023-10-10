@@ -15,9 +15,9 @@
 <body class="bg-[#0E0353]">
 
     <!-- Navbar -->
-    <nav class="p-4 bg-[#0E0230] fixed w-full top-0 opacity-100">
+    <nav class="p-4 bg-[#0E0230] fixed w-full top-0 opacity-100 z-50">
         <div class="mx-4">
-            <div class="md:flex md:items-center md:justify-between item">
+            <div class="md:flex md:items-center md:justify-between item ">
                 <div class="md:flex items-center flex justify-between">
 
                     <div class="flex items-center text-2xl md:text-4xl uppercase text-white font-extrabold ">
@@ -119,10 +119,10 @@
                             class="text-[#FFC907]">itc</span></h1>
                 </div>
             </div>
-            <div class=" justify-center md:grid md:grid-cols-3 md:gap-5 mt-5 ">
+            <div class=" justify-center md:grid md:grid-cols-3 md:gap-5 mt-5 gap-3">
                                 
                 <div
-                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+                    class="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md">
                     <div class="h-96 w-full">
                         <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
                             src="../img/coding.jpg" alt="">
@@ -132,18 +132,18 @@
                     </div>
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold">Pemrograman</h1>
+                        <h1 class=" text-3xl text-white font-bold -mt-10">Pemrograman</h1>
                         <p
                             class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, autem quis! Harum.
                         </p>
-                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full">
+                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
                             <a href="#">Klik me</a>
                         </button>
                     </div>
                 </div>
                 <div
-                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md">
                     <div class="h-96 w-full">
                         <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
                             src="../img/coding.jpg" alt="">
@@ -153,18 +153,19 @@
                     </div>
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold">Pemrograman</h1>
+                        <h1 class=" text-3xl text-white font-bold -mt-10">Pemrograman</h1>
                         <p
                             class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, autem quis! Harum.
                         </p>
-                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full">
+                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
                             <a href="#">Klik me</a>
                         </button>
                     </div>
                 </div>
-                <div
-                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+                <div class="z-10">
+                    <div
+                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-md">
                     <div class="h-96 w-full">
                         <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
                             src="../img/coding.jpg" alt="">
@@ -174,15 +175,16 @@
                     </div>
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold">Pemrograman</h1>
+                        <h1 class=" text-3xl text-white font-bold -mt-10">Pemrograman</h1>
                         <p
                             class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, autem quis! Harum.
                         </p>
-                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full">
+                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
                             <a href="#">Klik me</a>
                         </button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -192,7 +194,7 @@
 
     <!-- Tabel -->
 
-    <div class="relative md:mx-36 mx-7 mt-20">
+    <div class="relative md:mx-72 mx-7 mt-20">
         <div class="mb-2 md:text-3xl text-xl font-bold mb-5">
             <h1 class="text-center text-white">Daftar peserta <span class="text-yellow-400">ITC</span>amp 2023</h1>
         </div>
@@ -207,14 +209,14 @@
                 </tr>
             </thead>
             <tbody class="text-left">
-                <tr class="bg-white dark:bg-gray-800 ">
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-700">
                     <td class="border px-6 py-2">1</td>
                     <th class="border px-6 py-2 font-medium text-gray-900 dark:text-white">Alfin Mardani</th>
                     <td class="border px-6 py-2">Teknik Informatika</td>
                     <td class="border px-6 py-2">Laki-laki</td>
                     <td class="border px-6 py-2">Verifikasi</td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-700">
                     <td class="border px-6 py-2">2</td>
                     <th scope="row"
                         class="whitespace-nowrap border px-6 py-2 font-medium text-gray-900 dark:text-white">Baiq
