@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Home</title>
@@ -61,15 +64,15 @@
 
     <!-- Halaman -->
     <div class="block mb-6">
-        <div class="mt-24 mx-7 md:mx-60">
+        <div class="mt-24 mx-7 md:mx-60" data-aos="fade-down" data-aos-duration="2000">
             <img src="../img/ukm.png" class="w-full h-full md:w-max md:h-max" alt="" width="600%">
         </div>
         <div class="flex gap-2 mt-5 justify-center md:gap-3">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <a href="#"
                     class="show-modal bg-transparent border border-[#17C2E8] py-1 px-3 md:px-7 md:py-2 md:text-base text-sm text-white font-semibold md:text-xl rounded hover:bg-[#17C2E8]">Login</a>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <button class="show-modal">
                     <a href="#"
                         class="bg-[#17C2E8] border border-[#17C2E8] py-1 px-3 md:px-7 md:py-2 md:text-base text-sm text-white font-semibold md:text-xl rounded hover:bg-transparent shadow-2xl">Register</a>
@@ -80,8 +83,7 @@
     </div>
     <!-- End Halaman -->
 
-
-    <marquee behavior="s" direction=""></marquee>
+    <marquee behavior="" direction=""></marquee>
 
 
     <!-- About -->
@@ -96,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="bg-[#011630] md:py-20 py-10 shadow text-center rounded-xl mt-5 shadow">
+            <div class="bg-[#011630] md:py-20 py-10 shadow text-center rounded-xl mt-5 shadow" data-aos="zoom-in" data-aos-duration="3000" >
                 <p class="md:px-16 text-white px-6 md:text-lg text-sm">"ITC bukan hanya sebuah tempat untuk mengasah
                     keahlian di
                     bidang IT,
@@ -120,9 +122,9 @@
                 </div>
             </div>
             <div class=" justify-center md:grid md:grid-cols-3 md:gap-5 mt-5 gap-3">
-                                
+
                 <div
-                    class="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md">
+                    class="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md" data-aos="fade-up" data-aos-duration="3000" >
                     <div class="h-96 w-full">
                         <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
                             src="../img/coding.jpg" alt="">
@@ -132,10 +134,11 @@
                     </div>
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold -mt-24">Pemrograman</h1>
+                        <h1 class="md:text-3xl text-2xl text-white font-bold -mt-24">Pemrograman</h1>
                         <p
-                            class="text-lg text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                            "Proses menulis, menguji dan memperbaiki (debug), dan memelihara kode yang membangun suatu program komputer."
+                            class="md:text-lg text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                            "Proses menulis, menguji dan memperbaiki (debug), dan memelihara kode yang membangun suatu
+                            program komputer."
                         </p>
                         <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
                             <a href="#">Klik me</a>
@@ -143,7 +146,7 @@
                     </div>
                 </div>
                 <div
-                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md">
+                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mb-5 rounded-md" data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="300">
                     <div class="h-96 w-full">
                         <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
                             src="../img/multimedia.jpg" alt="">
@@ -153,10 +156,12 @@
                     </div>
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold -mt-10">Multimedia</h1>
+                        <h1 class="md:text-3xl text-2xl text-white font-bold -mt-10">Multimedia</h1>
                         <p
-                            class="text-lg text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                            "komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video dengan alat bantu dan tautan sehingga pengguna dapat melakukan navigasi, berinteraksi, berkarya, dan berkomunikasi."
+                            class="md:text-lg text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                            "komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video
+                            dengan alat bantu dan tautan sehingga pengguna dapat melakukan navigasi, berinteraksi,
+                            berkarya, dan berkomunikasi."
                         </p>
                         <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
                             <a href="#">Klik me</a>
@@ -165,26 +170,28 @@
                 </div>
                 <div class="z-10">
                     <div
-                    class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-md">
-                    <div class="h-96 w-full">
-                        <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
-                            src="../img/jaringan.jpg" alt="">
+                        class="group relative z-10 items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-md" data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="500">
+                        <div class="h-96 w-full">
+                            <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                                src="../img/jaringan.jpg" alt="">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                            <h1 class="md:text-3xl text-2xl text-white font-bold">Jaringan</h1>
+                            <p
+                                class="md:text-lg text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                                " jaringan komunikasi global yang menghubungkan satu komputer ke komputer lain di
+                                seluruh dunia. Lebih jelasnya internet memungkinkan untuk terjadinya komunikasi dan
+                                pertukaran informasi dengan berbagai pihak kapan pun dan di mana pun."
+                            </p>
+                            <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
+                                <a href="#">Klik me</a>
+                            </button>
+                        </div>
                     </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                        <h1 class=" text-3xl text-white font-bold">Jaringan</h1>
-                        <p
-                            class="text-lg text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                            " jaringan komunikasi global yang menghubungkan satu komputer ke komputer lain di seluruh dunia. Lebih jelasnya internet memungkinkan untuk terjadinya komunikasi dan pertukaran informasi dengan berbagai pihak kapan pun dan di mana pun."
-                        </p>
-                        <button class="bg-white text-black px-4 py-1 font-semibold rounded-full opacity-70">
-                            <a href="#">Klik me</a>
-                        </button>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -195,10 +202,10 @@
     <!-- Tabel -->
 
     <div class="relative md:mx-72 mx-7 mt-20">
-        <div class="mb-2 md:text-3xl text-xl font-bold mb-5">
+        <div class="mb-2 md:text-3xl text-xl font-bold ">
             <h1 class="text-center text-white">Daftar peserta <span class="text-yellow-400">ITC</span>amp 2023</h1>
         </div>
-        <table class="w-full text-sm text-white">
+        <table class="w-full text-sm text-white mt-7" data-aos="zoom-out" data-aos-duration="3000">
             <thead class="bg-gray-50 text-xs uppercase dark:bg-gray-700 text-center">
                 <tr class="">
                     <th scope="col" class="border border-white px-6 py-2">NO</th>
@@ -210,14 +217,14 @@
             </thead>
             <tbody class="text-left">
                 <tr class="bg-white dark:bg-gray-800 hover:bg-gray-700">
-                    <td class="border px-6 py-2">1</td>
+                    <td class="border px-6 py-2 text-center">1</td>
                     <th class="border px-6 py-2 font-medium text-gray-900 dark:text-white">Alfin Mardani</th>
                     <td class="border px-6 py-2">Teknik Informatika</td>
                     <td class="border px-6 py-2">Laki-laki</td>
                     <td class="border px-6 py-2">Verifikasi</td>
                 </tr>
                 <tr class="bg-white dark:bg-gray-800 hover:bg-gray-700">
-                    <td class="border px-6 py-2">2</td>
+                    <td class="border px-6 py-2 text-center">2</td>
                     <th scope="row"
                         class="whitespace-nowrap border px-6 py-2 font-medium text-gray-900 dark:text-white">Baiq
                         Elinda Sopiana</th>
@@ -234,7 +241,7 @@
 
     <!-- Footer -->
     <footer class="bg-white dark:bg-[#010530] mt-10">
-        <div class="mx-auto w-full max-w-screen-xl py-6 p-5 lg:py-8">
+        <div class="mx-auto w-full max-w-screen-xl py-6 p-5 lg:py-8" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="500" >
             <div class="md:flex md:justify-between md:mx-10">
                 <div class="mb-6 md:mb-0 ">
                     <a href="#" class="md:-mt-5">
@@ -297,6 +304,7 @@
 
 
     <!-- Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
 
         let list = document.querySelector('ul');
@@ -306,6 +314,8 @@
 
             e.name === 'menu' ? (e.name = "close", list.classList.add('top-[68px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[68px]', list.classList.remove('opacity-100')))
         }
+
+        AOS.init();
 
     </script>
     <!-- End Script -->
